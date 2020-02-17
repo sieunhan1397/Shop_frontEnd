@@ -87,7 +87,6 @@
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in 0.5s;
-    will-change: opacity;
 }
 
 .header__qr::before {
@@ -250,4 +249,31 @@
     padding: 6px 0;
     width: 100%;
     text-align: center;
+}
+
+/* Modal Layout */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.modal__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__body {
+    height: 300px;
+    width: 300px;
+    background-color: var(--white-color);
+    margin: auto;
+    z-index: 1;
+    border-radius: 5px;
+    position: relative;
 }
