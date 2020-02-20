@@ -85,7 +85,7 @@ html {
 .btn {
     background-color: var(--white-color);
     height: 36px;
-    min-width: 140px;
+    min-width: 128px;
     border-radius: 2px;
     border-style: none;
     cursor: pointer;
