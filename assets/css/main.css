@@ -13,7 +13,7 @@
     padding-left: 0;
     margin: 4px 0 0 0;
     min-height: var(--header-navbar-height);
-    display: inline-flex;
+    display: flex;
     align-items: center;
 }
 
@@ -21,6 +21,88 @@
     margin: 0 10px;
     position: relative;
     min-height: 26px;
+}
+/* User Login */
+.header__navbar-user {
+    display: flex;
+    justify-items: center;
+    position: relative;
+}
+
+.header__navbar-user-img {
+    height: 28px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__navbar-user-name {
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.header__navbar-user-menu {
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 3px);
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    width: 160px;
+    padding-left: 0;
+    box-shadow: 0 1px 3.125rem 0 rgba(0,0,0,.2);
+    display: none;
+}
+
+.header__navbar-user:hover .header__navbar-user-menu{
+    display: block;
+}
+
+.header__navbar-user-menu::before {
+    content: "";
+    position: absolute;
+    width: 84%;
+    height: 10px;
+    top: -10px;
+    right: 0;
+    display: block;
+}
+
+.header__navbar-user-menu::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 14px 20px;
+    border-color:transparent transparent var(--white-color) transparent;
+    top: -25px;
+    right: 8px;
+}
+
+.header__navbar-user-item {
+    list-style: none;
+}
+
+.header__navbar-user-item a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    display: block;
+    padding: 4px 16px;
+}
+
+.header__navbar-user-item a:hover {
+    background-color: #fafafa;
+}
+
+.header__navbar-user-item a:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.header__navbar-user-item a:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .header__navbar-item, .header__navbar-item-link {
@@ -67,7 +149,7 @@
 .header__navbar-item, 
 .header__navbar-item-link, 
 .header__navbar-link-icon {
-    display: inline-flex;
+    display: flex;
     align-items: center;   
 }
 
