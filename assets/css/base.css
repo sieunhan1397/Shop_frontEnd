@@ -2,6 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --star-gold-color: #ffce3d;
     --primary-color:#ee4d2d;
     --border-color: #dbdbdb;
     --header-height: 120px;
@@ -183,6 +184,7 @@ html {
     left: 0;
     padding: 8px 14px;
     display: none;
+    z-index: 1;
 }
 
 .select-sort__list::before {
